@@ -1,0 +1,26 @@
+.bouton{
+    background-color: $color-secondary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $color-secondary;
+    border-radius: 0.25rem;
+    font-family: 'PT Sans', 'sans-serif';
+    font-size: 0.8em;
+    font-weight: bold;
+    color: $color-fourth !important;
+    padding: 5px 10px;
+    &:hover {
+        text-decoration: underline;
+        color: $color-fourth !important;
+    }
+    &.small{
+        padding: 2px 5px;
+    }
+    &.large{
+        padding: 5px 20px; 
+    }
+    &.big{
+        padding: 20px;
+    }
+}

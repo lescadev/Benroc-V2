@@ -1,0 +1,71 @@
+%textDefault{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: $color-main;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: $color-third;
+    margin: 0;
+
+    p {
+        @extend %textDefault;
+    }
+
+    a,
+    a:hover,
+    a:focus {
+        color: inherit;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+
+    ul ul a {
+        font-size: 0.9em !important;
+        padding-left: 55px !important;
+    }
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+label{
+    margin-bottom: 0.4rem;
+}
+
+#content{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    padding-left: $largeur;
+    transition: padding 250ms ease;
+    @include media-breakpoint-down(sm){
+        padding-left: 0;
+    }
+    &.active{
+        padding-left: 0;
+    }
+    p{
+        color: $color-text;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container{
+    padding: 0;
+}
+
+.col-12{
+    padding: 0px;
+}
+
+.flex{display: flex;}
+.justifyContent--center{justify-content: center;}
+.justifyContent--right{justify-content: flex-end;}

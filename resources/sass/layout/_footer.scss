@@ -1,0 +1,19 @@
+.footer{
+	display: flex;
+	justify-content: center;
+    align-items: flex-end;
+    background-color: $color-secondary;
+    padding: 10px 0;
+    a,p{
+        @extend %textDefault;
+        font-size:0.8em;
+        margin: 0;
+        color: white !important;
+    }
+    a{
+        font-weight: 700;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

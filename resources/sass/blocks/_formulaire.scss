@@ -1,0 +1,34 @@
+.jumbotron {
+    background: $color-secondary;
+    color: $color-fourth;
+    border-radius: 0px;
+
+    &-sm {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    h1 {
+        padding: 10px;
+        text-align: center;
+    }
+
+    & .h1 small {
+        font-size: 24px;
+        color: $color-fourth;
+    }
+}
+
+.container {
+    padding: 20px;
+
+    a {
+        &:hover {
+            color: $color-secondary;
+            transition: color 0.5s ease;
+        }
+    }
+    form{
+        margin-top: 20px;
+    }
+}
