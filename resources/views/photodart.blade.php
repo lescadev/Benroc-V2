@@ -7,15 +7,13 @@
 @section('content')
 
 <h1 class="titreGal">Galerie Photos d'art</h1>
-<div class="container">
-    <div class="row">
+<div class="resize">
+    <div class="contener">
         @foreach ($arts as $art)
-        <div class="col-lg-2 col-md-4 col-sm-6 resize">
             <div class="imgSwap">
                 <a href="/img/{{ $art['image'] }}" data-lightbox="prestation" alt="photographe-Limoges-photos-art"
                     data-title="{!! $art['description'] !!}"><img src="/img/{{ $art['image'] }}" /></a>
             </div>
-        </div>
         @endforeach
     </div>
 </div>

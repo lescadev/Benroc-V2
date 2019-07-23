@@ -1,14 +1,29 @@
 .resize{
-  margin-top: auto;
-  margin-bottom: auto;
-  .imgSwap{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  
+  .contener{
+    grid-column: 1 / 14;
+    padding: 0 1vw;
+    width: 100%;
+    column-count: 6;
+    @media (min-width: 1367px ){
+      column-count: 10;
+    }
+    @include media-breakpoint-down(md){
+      column-count: 4;
+    }
+    @include media-breakpoint-down(sm){
+      column-count: 2;
+    }
+
+    column-gap: 1em;
     a{
       display: block;
       margin-bottom: 20px;
       img{
-        width: 100%;
-        height: auto;
         display: inline-block;
+        width: 100%;
       }
     }
   }
