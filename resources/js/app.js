@@ -8,7 +8,6 @@ require('./bootstrap')
 import 'isotope-layout'
 require('./isotope.pkgd.min.js')
 require('./barnav')
-require('./masonry')
 require('./gestionMenu')
 
 window.Vue = require('vue')

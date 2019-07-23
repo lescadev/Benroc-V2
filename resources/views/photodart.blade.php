@@ -6,15 +6,17 @@
 
 @section('content')
 
-<div class="grid">
-    @foreach ($arts as $art)
-    <div class="grid-item">
-        <div class="imgSwap">
-            <a href="/img/{{ $art['image'] }}" data-lightbox="prestation" alt="photographe-Limoges-photos-art"
-                data-title="{!! $art['description'] !!}"><img src="/img/{{ $art['image'] }}" /></a>
+<div class="container">
+    <div class="row">
+        @foreach ($arts as $art)
+        <div class="col-lg-2 col-md-4 col-sm-6 resize">
+            <div class="imgSwap">
+                <a href="/img/{{ $art['image'] }}" data-lightbox="prestation" alt="photographe-Limoges-photos-art"
+                    data-title="{!! $art['description'] !!}"><img src="/img/{{ $art['image'] }}" /></a>
+            </div>
         </div>
+        @endforeach
     </div>
-    @endforeach
 </div>
 
 @endsection
