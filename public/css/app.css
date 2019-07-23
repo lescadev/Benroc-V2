@@ -11049,3 +11049,12 @@ label {
   padding: 20px;
 }
 
+.titreGal {
+  font-size: 2.5em;
+  text-align: center;
+  padding: 0.5em;
+  font-weight: 400;
+  background-color: #358CCE;
+  color: white;
+}
+

@@ -1,5 +1,5 @@
 <div id="galeriecontent">
-
+    <h1 class="titreGal">Galerie {{ $prestationInfos[0]['name'] }}</h1>
     <div class="container">
         <div class="row">
             @foreach ($prestationPhotos as $prestationPhoto)
