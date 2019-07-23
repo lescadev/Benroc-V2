@@ -6,6 +6,7 @@
 
 @section('content')
 
+<h1 class="titreGal">Galerie Photos d'art</h1>
 <div class="container">
     <div class="row">
         @foreach ($arts as $art)
