@@ -10914,7 +10914,7 @@ label {
 
 .resize .conteneur {
   grid-column: 1/14;
-  padding: 0 1vw;
+  padding: 15px;
   width: 100%;
   -moz-column-count: 6;
        column-count: 6;
@@ -10924,6 +10924,7 @@ label {
 
 @media (min-width: 1367px) {
   .resize .conteneur {
+
     -moz-column-count: 8;
          column-count: 8;
   }
@@ -10990,17 +10991,6 @@ label {
   max-width: 100%;
   max-height: 100%;
   font-size: 8px;
-}
-
-.imgSwap:hover {
-  opacity: 1;
-  transform: scale(1.18);
-  z-index: 2;
-  box-shadow: 1px 1px 10px 10px #242424;
-}
-
-.imgSwap:hover .imgSwap__overlay {
-  opacity: 1;
 }
 
 .imgSwap__green {
