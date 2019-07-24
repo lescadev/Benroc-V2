@@ -8,7 +8,7 @@
 
 <h1 class="titreGal">Galerie Photos d'art</h1>
 <div class="resize">
-    <div class="contener">
+    <div class="conteneur">
         @foreach ($arts as $art)
             <div class="imgSwap">
                 <a href="/img/{{ $art['image'] }}" data-lightbox="prestation" alt="photographe-Limoges-photos-art"

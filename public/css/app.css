@@ -10912,7 +10912,7 @@ label {
   grid-template-columns: repeat(12, 1fr);
 }
 
-.resize .contener {
+.resize .conteneur {
   grid-column: 1/14;
   padding: 15px;
   width: 100%;
@@ -10923,32 +10923,33 @@ label {
 }
 
 @media (min-width: 1367px) {
-  .resize .contener {
+  .resize .conteneur {
+
     -moz-column-count: 8;
          column-count: 8;
   }
 }
 
 @media (max-width: 991.98px) {
-  .resize .contener {
+  .resize .conteneur {
     -moz-column-count: 4;
          column-count: 4;
   }
 }
 
 @media (max-width: 767.98px) {
-  .resize .contener {
+  .resize .conteneur {
     -moz-column-count: 2;
          column-count: 2;
   }
 }
 
-.resize .contener a {
+.resize .conteneur a {
   display: block;
   margin-bottom: 20px;
 }
 
-.resize .contener a img {
+.resize .conteneur a img {
   display: inline-block;
   width: 100%;
 }
