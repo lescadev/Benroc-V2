@@ -33,6 +33,6 @@
 @if ($errors->any())
 <div class="alert alert-danger">
 	<button type="button" class="close" data-dismiss="alert">×</button>	
-	S'il vous plaît, vérifiez si il y a des erreurs dans le formulaire ci-dessous.
+	Veuillez vérifier les erreurs dans le formulaire ci-dessous.
 </div>
 @endif
