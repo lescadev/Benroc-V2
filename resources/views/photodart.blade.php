@@ -12,7 +12,7 @@
         @foreach ($arts as $art)
             <div class="imgSwap">
                 <a href="/img/{{ $art['image'] }}" data-lightbox="prestation" alt="photographe-Limoges-photos-art"
-                    data-title="{!! $art['description'] !!}"><img src="/img/{{ $art['image'] }}" /></a>
+                    data-title="{!! $art['description'] !!}"><img src="/storage/{{ $art['image'] }}" /></a>
             </div>
         @endforeach
     </div>
