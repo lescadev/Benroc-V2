@@ -1,7 +1,7 @@
 <div id="galeriecontent">
     <h1 class="titreGal">Galerie {{ $prestationInfos[0]['name'] }}</h1>
         <div class="resize">
-            <div class="contener">
+            <div class="conteneur">
                 @foreach ($prestationPhotos as $prestationPhoto)
                 <div class="imgSwap">
                     <a href="/img/{{ $prestationPhoto['image'] }}" data-lightbox="prestation"

@@ -22,7 +22,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="name" placeholder="Votre nom"
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Votre nom"
                                         value="{{ old('name') }}" required="required" />
                                 </div>
                                 <div class="form-group">
@@ -30,18 +30,18 @@
                                         <span class="input-group-addon"><span
                                                 class="glyphicon glyphicon-envelope"></span>
                                         </span>
-                                        <input type="email" class="form-control" id="email" placeholder="Votre email"
+                                        <input name="email" type="email" class="form-control" id="email" placeholder="Votre email"
                                             value="{{ old('email') }}" required="required" /></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" class="form-control" id="tel" placeholder="téléphone"
+                                    <input name="telephone" type="tel" class="form-control" id="tel" placeholder="téléphone"
                                         value="{{ old('tel') }}" required="required" />
                                 </div>
                                 <input type="hidden" name="prestation_nom" value="{{ $prestationInfos[0]['name'] }}">
                                 <input type="hidden" name="prestation_slug" value="{{ $prestationInfos[0]['slug'] }}">
                                 <div class="form-group">
                                     <label for="date">Date souhaitée:</label>
-                                    <input type="date" class="form-control" id="date" placeholder="Date souhaitée"
+                                    <input name="date" type="date" class="form-control" id="date" placeholder="Date souhaitée"
                                         value="{{ old('date') }}" required="required" />
                                 </div>
                             </div>

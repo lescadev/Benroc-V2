@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\ContactFormMail;
+use App\Mail\contactFormMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use App\AdresseDestinataire;
 
 class ContactFormController extends Controller
 {
@@ -23,10 +24,17 @@ class ContactFormController extends Controller
             'message' => 'required',
         ]);
        
-        Mail::to('DrFoetus87@gmail.com')->send(new ContactFormMail($data));
-
-        // je1taptamere@gmail.com
+        Mail::to('greg.lblr@gmail.com')->send(new contactFormMail($data));
+            //AdresseDestinataire::select('email')
 
         return redirect()->route('contact');
+    }
+
+    public function email()
+    {
+        $email = AdresseDestinataire::select('email')->get()->toArray();
+        return view('email', [
+            'email' => $email,
+        ]);
     }
 }
