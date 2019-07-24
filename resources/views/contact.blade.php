@@ -53,6 +53,7 @@
                             <button type="submit" class="bouton envoyer pull-right">
                                 Envoyer Message</button>
                         </div>
+                         @include('flash-message')
                     </div>
                 </form>
             </div>

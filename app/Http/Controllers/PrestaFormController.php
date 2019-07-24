@@ -29,7 +29,7 @@ class PrestaFormController extends Controller
         Mail::to('greg.lblr@gmail.com')->send(new prestaFormMail($data));
 
         // je1taptamere@gmail.com
-
+        return back()->with('success','Message envoyé avec succès !');
         return redirect()->route('prestation', ['name' => strtolower($data['prestation_slug'])]);
     }
 

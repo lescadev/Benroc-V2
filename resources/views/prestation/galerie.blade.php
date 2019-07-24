@@ -1,5 +1,6 @@
 <div id="galeriecontent">
     <h1 class="titreGal">Galerie {{ $prestationInfos[0]['name'] }}</h1>
+    @include('flash-message')
         <div class="resize">
             <div class="conteneur">
                 @foreach ($prestationPhotos as $prestationPhoto)

@@ -27,7 +27,7 @@ class ContactFormController extends Controller
         Mail::to('greg.lblr@gmail.com')->send(new contactFormMail($data));
             //AdresseDestinataire::select('email')
 
-        return redirect()->route('contact');
+        return back()->with('success','Message envoyé avec succès !');
     }
 
     public function email()
