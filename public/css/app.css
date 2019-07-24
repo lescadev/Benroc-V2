@@ -10924,7 +10924,6 @@ label {
 
 @media (min-width: 1367px) {
   .resize .conteneur {
-
     -moz-column-count: 8;
          column-count: 8;
   }
