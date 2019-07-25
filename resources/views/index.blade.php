@@ -12,7 +12,7 @@
         <?php $count = 0; ?>
         @foreach ($photos as $photo)
         <div class="carousel-item <?php if($count === 0) echo 'active'; ?>" data-id="<?php echo $count; ?>">
-            <img src="/img/{{ $photo['image'] }}" class="d-block w-100" alt="...">
+            <img src="/storage/{{ $photo['image'] }}" class="d-block w-100" alt="...">
         </div>
         <?php $count++; ?>
         @endforeach

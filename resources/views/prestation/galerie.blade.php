@@ -8,7 +8,7 @@
                     <a href="/img/{{ $prestationPhoto['image'] }}" data-lightbox="prestation"
                         data-title="{!! $prestationPhoto['description'] !!}"><img
                             alt="Photographe-Limoges-Prestation-{!! $prestationPhoto['description'] !!}" loading="lazy"
-                            src="/img/{{ $prestationPhoto['image'] }}" /></a>
+                            src="/storage/{{ $prestationPhoto['image'] }}" /></a>
                 </div>
                 @endforeach
             </div>
