@@ -7,7 +7,7 @@
         </nav>
         <ul class="list-unstyled components">
             <li><a href="{{ route('index') }}" class="logo">
-                    <img src="/img/{{ config('infos')[0]['image_logo'] }}" />
+                    <img src="/storage/{{ config('infos')[0]['image_logo'] }}" />
                 </a></li>
             <li>
                 <a href="{{ route('index') }}" class="accueil"><i class="fas fa-home"></i>&nbsp;&nbsp;Accueil</a>

@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\PrestaFormMail;
+use App\Mail\prestaFormMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use App\AdresseDestinataire;
 
 class PrestaFormController extends Controller
 {
@@ -25,10 +26,18 @@ class PrestaFormController extends Controller
             'prestation_slug' => '',
         ]);
 
-        Mail::to('DrFoetus87@gmail.com')->send(new PrestaFormMail($data));
+        Mail::to('greg.lblr@gmail.com')->send(new prestaFormMail($data));
 
         // je1taptamere@gmail.com
-
+        return back()->with('success','Message envoyé avec succès !');
         return redirect()->route('prestation', ['name' => strtolower($data['prestation_slug'])]);
+    }
+
+    public function email()
+    {
+        $email = AdresseDestinataire::select('email')->get()->toArray();
+        return view('email', [
+            'email' => $email,
+        ]);
     }
 }

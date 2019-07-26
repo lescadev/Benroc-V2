@@ -9,6 +9,7 @@ use App\Photo;
 use App\Categories;
 use App\Infosgenerale;
 use App\Mention;
+use App\AdresseDestinataire;
 
 
 class PagesController extends Controller
@@ -65,5 +66,13 @@ class PagesController extends Controller
         ]);
 
         
+    }
+
+    public function email()
+    {
+        $email = AdresseDestinataire::select('email')->get()->toArray();
+        return view('email', [
+            'email' => $email,
+        ]);
     }
 }

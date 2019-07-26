@@ -13,5 +13,4 @@ const mix = require('laravel-mix');
 
 mix.browserSync('http://localhost:8000/')
     .js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css')
-    .copyDirectory('resources/img', 'public/img');;
+    .sass('resources/sass/app.scss', 'public/css');

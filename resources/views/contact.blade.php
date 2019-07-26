@@ -22,22 +22,22 @@
     <div class="row">
         <div class="col-md-8">
             <div class="well well-sm">
-                <form form action="/contact" role="form" method="POST">
+                <form action="/contact" role="form" method="POST">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="name" placeholder="Votre nom"
+                                <input name="name" type="text" class="form-control" id="name" placeholder="Votre nom"
                                     value="{{ old('name') }}" required="required" />
                             </div>
                             <div class="form-group">
                                 <div class="input-group">
                                     <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
                                     </span>
-                                    <input type="email" class="form-control" id="email" placeholder="Votre email"
+                                    <input name="email" type="email" class="form-control" id="email" placeholder="Votre email"
                                         value="{{ old('email') }}" required="required" /></div>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="objet" placeholder="Objet"
+                                <input name="objet" type="text" class="form-control" id="objet" placeholder="Objet"
                                     value="{{ old('objet') }}" required="required" />
                             </div>
                         </div>
@@ -53,6 +53,7 @@
                             <button type="submit" class="bouton envoyer pull-right">
                                 Envoyer Message</button>
                         </div>
+                         @include('flash-message')
                     </div>
                 </form>
             </div>
