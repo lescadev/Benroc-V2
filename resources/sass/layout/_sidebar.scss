@@ -44,7 +44,7 @@
         display: block;
 
         &:hover, &.active {
-            color: $color-secondary;
+            color: white;
             transition: color 0.5s ease;
         }
     }

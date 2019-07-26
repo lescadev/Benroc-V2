@@ -10736,7 +10736,7 @@ label {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  background-color: #358CCE;
+  background-color: #4d5464;
   padding: 10px 0;
 }
 
@@ -10808,7 +10808,7 @@ label {
 
 #sidebar ul li a:hover,
 #sidebar ul li a.active {
-  color: #358CCE;
+  color: white;
   transition: color 0.5s ease;
 }
 
@@ -10817,7 +10817,7 @@ label {
 }
 
 #sidebar a:hover {
-  color: #358CCE;
+  color: #4d5464;
   transition: color 0.5s ease;
 }
 
@@ -10997,7 +10997,7 @@ label {
 }
 
 .jumbotron {
-  background: #358CCE;
+  background: #4d5464;
   color: white;
   border-radius: 0px;
 }
@@ -11022,7 +11022,7 @@ label {
 }
 
 .container a:hover {
-  color: #358CCE;
+  color: #4d5464;
   transition: color 0.5s ease;
 }
 
@@ -11031,7 +11031,7 @@ label {
 }
 
 .mentions h1 {
-  background-color: #358CCE;
+  background-color: #4d5464;
   padding: 20px;
   color: white;
   text-align: center;
@@ -11042,11 +11042,11 @@ label {
 }
 
 .bouton {
-  background-color: #358CCE;
+  background-color: #4d5464;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #358CCE;
+  border: 1px solid #4d5464;
   border-radius: 0.25rem;
   font-family: "PT Sans", "sans-serif";
   font-size: 0.8em;
@@ -11077,7 +11077,7 @@ label {
   text-align: center;
   padding: 0.5em;
   font-weight: 400;
-  background-color: #358CCE;
+  background-color: #4d5464;
   color: white;
 }
 
