@@ -5,7 +5,7 @@
             <div class="conteneur">
                 @foreach ($prestationPhotos as $prestationPhoto)
                 <div class="imgSwap">
-                    <a href="/img/{{ $prestationPhoto['image'] }}" data-lightbox="prestation"
+                    <a href="/storage/{{ $prestationPhoto['image'] }}" data-lightbox="prestation"
                         data-title="{!! $prestationPhoto['description'] !!}"><img
                             alt="Photographe-Limoges-Prestation-{!! $prestationPhoto['description'] !!}" loading="lazy"
                             src="/storage/{{ $prestationPhoto['image'] }}" /></a>
