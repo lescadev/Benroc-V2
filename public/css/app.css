@@ -10768,6 +10768,13 @@ label {
   justify-content: space-between;
 }
 
+#sidebar button {
+  background-color: white;
+  color: black;
+  box-shadow: none;
+  border: 1.5px solid black;
+}
+
 #sidebar.active {
   margin-left: -230px;
 }

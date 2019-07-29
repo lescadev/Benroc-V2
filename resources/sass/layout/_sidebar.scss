@@ -10,6 +10,13 @@
     flex-direction: column;
     justify-content: space-between;
 
+    button{
+        background-color: white;
+        color: black;
+        box-shadow: none;
+        border: 1.5px solid black;
+    }
+
     &.active {
         margin-left: -230px;
     }
