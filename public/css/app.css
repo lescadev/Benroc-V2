@@ -10903,7 +10903,8 @@ label {
 
 @media (max-width: 767.98px) {
   .carousel-title-wrapper .carousel-slogan {
-    font-size: 6px;
+    font-size: 9px;
+    margin-top: 70px;
   }
 }
 
