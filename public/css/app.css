@@ -10892,12 +10892,14 @@ label {
 @media (max-width: 1199.98px) {
   .carousel-title-wrapper .carousel-slogan {
     font-size: 14px;
+    margin-top: 70px;
   }
 }
 
 @media (max-width: 991.98px) {
   .carousel-title-wrapper .carousel-slogan {
     font-size: 10px;
+    margin-top: 50px;
   }
 }
 
@@ -10905,6 +10907,7 @@ label {
   .carousel-title-wrapper .carousel-slogan {
     font-size: 9px;
     margin-top: 70px;
+    text-align: center;
   }
 }
 

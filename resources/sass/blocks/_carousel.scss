@@ -48,13 +48,16 @@
         }
         @include media-breakpoint-down(lg){
             font-size: 14px;
+            margin-top: 70px;
         }
         @include media-breakpoint-down(md){
             font-size: 10px;
+            margin-top: 50px;
         }
         @include media-breakpoint-down(sm){
             font-size: 9px;
             margin-top: 70px;
+            text-align: center;
         }
     }
     
