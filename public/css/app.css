@@ -10768,6 +10768,13 @@ label {
   justify-content: space-between;
 }
 
+#sidebar button {
+  background-color: white;
+  color: black;
+  box-shadow: none;
+  border: 1.5px solid black;
+}
+
 #sidebar.active {
   margin-left: -230px;
 }
@@ -10817,7 +10824,7 @@ label {
 }
 
 #sidebar a:hover {
-  color: #4d5464;
+  color: white;
   transition: color 0.5s ease;
 }
 
@@ -10829,6 +10836,12 @@ label {
   font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
+}
+
+@media (max-width: 767.98px) {
+  #sidebar .socials {
+    margin-bottom: 50px;
+  }
 }
 
 #carouselExampleIndicators {
@@ -10892,18 +10905,22 @@ label {
 @media (max-width: 1199.98px) {
   .carousel-title-wrapper .carousel-slogan {
     font-size: 14px;
+    margin-top: 70px;
   }
 }
 
 @media (max-width: 991.98px) {
   .carousel-title-wrapper .carousel-slogan {
     font-size: 10px;
+    margin-top: 50px;
   }
 }
 
 @media (max-width: 767.98px) {
   .carousel-title-wrapper .carousel-slogan {
-    font-size: 6px;
+    font-size: 9px;
+    margin-top: 70px;
+    text-align: center;
   }
 }
 
